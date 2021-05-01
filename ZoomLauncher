@@ -1,0 +1,17 @@
+import webbrowser
+
+print('Available options:')
+print('')                         # list course names
+sub=str(input('What class?> '))
+
+try:
+    if sub == '':                     # course 1
+        webbrowser.open('')           # put zoom link 
+    elif sub == '':                   # course 2
+        webbrowser.open('')
+                                      # keep adding elif if you have more than two courses
+    else:
+        print('Error: check course name')                # prints error message if input not in the course options
+
+except:
+    print('Error: something went wrong!')                # prints error message if typeError
